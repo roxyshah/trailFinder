@@ -1,8 +1,8 @@
 'use strict';
 
 //https://developer.nps.gov/api/v1/parks?stateCode=CO&api_key=gcUGALBm35IkRAkYql7IJiKobuFvSkyu0PgUzTQF
-const apiKey = 'gcUGALBm35IkRAkYql7IJiKobuFvSkyu0PgUzTQF'; 
-const searchURL = 'https://developer.nps.gov/api/v1/parks';
+const apiKey = '200518328-8bca963655d57f39a898f6a5ed451149'; 
+const searchURL = 'https://www.hikingproject.com/data/';
 
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
@@ -24,10 +24,11 @@ function displayResults(responseJson) {
     $('#results').removeClass('hidden');
 }
 
-function renderParkList(userStateCode, maxResults=10) {
+function renderTrailList(userLat, userLong, maxResults=10) {
     const params = {
       api_key: apiKey,
-      stateCode: userStateCode,
+      Latitude: userLat,
+      Longitude: userLong,
       limit: maxResults
     };
     const queryString = formatQueryParams(params)
@@ -54,8 +55,8 @@ function watchForm() {
     $('#results-list').empty();
     // const searchTerm = $('#searchNatlParks').val();
     const maxResults = $('#js-max-results').val();
-    const stateCode = $('#userStateCode').val().replace(' ','');
-    renderParkList(stateCode, maxResults);
+    // const stateCode = $('#userStateCode').val().replace(' ','');
+    renderTrailList(userLat, userLong, maxResults);
   });
 }
 
