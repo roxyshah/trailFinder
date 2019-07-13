@@ -5,8 +5,6 @@ const googleAPIKey = 'AIzaSyAeGiEt4c7marM2v1Z2EAM2yH4rjFcjvXo';
 const searchURL = 'https://www.hikingproject.com/data/get-trails';
 const googleSearchURL = 'https://maps.googleapis.com/maps/api/geocode/json'
 
-// https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY
-
 function formatQueryParams(params) {
     const queryItems = Object.keys(params)
       .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
