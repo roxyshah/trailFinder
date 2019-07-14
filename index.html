@@ -9,18 +9,39 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>List of Trails in the Area</h1>
+    <section class="visual">
+        <style>
+            div#top-image {
+              background-image: url('./images/background_monarchLake_craterLake.jpg')
+            }
+            @media (max-width: 768px) {
+              div#top-image {
+                background-image: url('./images/background_monarchLake_craterLake.jpg')
+              }
+            }
+            @media (max-width: 1024px) {
+              div#top-image {
+                background-image: url('./images/background_monarchLake_craterLake.jpg')
+              }
+            }
+        </style>
+        <div id="top-image">
+            <div class="search-container">
+                <h1>List of Trails in the Area</h1>
+                
+                    <form id="js-form">
+                        <label for="search-term"></label>
+                        <input type="text" name="Address" id="userAddress" value="" placeholder="Enter a address, city or area code" required>
+                        <br/>
+                        <label for="max-results"></label>
+                        <input type="number" name="max-results" id="js-max-results" placeholder="Number of results">
+                        <br/>
+                        <input type="submit" id="submit" value="Go!">
+                    </form>
+            </div>
+        </div>
+    </section>
 
-        <form id="js-form">
-            <label for="search-term">Search by Location:</label>
-            <input type="text" name="Address" id="userAddress" value="" required>
-            <br/>
-            <label for="max-results">Maximum results to return</label>
-            <input type="number" name="max-results" id="js-max-results" value="10">
-            <br/>
-            <input type="submit" value="Go!">
-        </form>
 
         <p id="js-error-message" class="error-message"></p>
         <section id="results" class="hidden">
@@ -28,7 +49,7 @@
           <ul id="results-list">
           </ul>
         </section>
-    </div>
+ 
     <script src="index.js"></script>
 </body>
 </html> 

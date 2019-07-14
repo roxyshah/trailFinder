@@ -28,9 +28,10 @@
     max-width: 500px;
   }
   
-  .container {
+  .search-container {
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
   }
   
   .error-message {
@@ -40,3 +41,34 @@
   .hidden {
     display: none;
   }
+
+  #top-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  #userAddress {
+    border-radius: 3px;
+  }
+
+  #js-max-results {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+  }
+
+  #submit {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 3px;
+  }
+
+  /* @media screen and (min-width:768px) {
+    #top-image {
+      height:150px;
+    }
+  } */
