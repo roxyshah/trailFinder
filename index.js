@@ -17,9 +17,9 @@ function displayResults(responseJson) {
     console.log(responseJson);
     for(let i = 0; i < responseJson.trails.length; i++) {
         console.log(responseJson.trails[i].name);
-        const listItem = '<li><a href="' + responseJson.trails[i].url + '" target="_blank">' 
+        const listItem = '<li><p><a href="' + responseJson.trails[i].url + '" target="_blank">' 
         + responseJson.trails[i].name 
-        +'</a><p>' + '<img src="' + responseJson.trails[i].imgMedium +'"/>' + '</p><p>' + responseJson.trails[i].location + '</p><p>' + responseJson.trails[i].summary + '</p><p>' + responseJson.trails[i].length + ' miles</p></li>';
+        +'</a></p><p>' + '<img src="' + responseJson.trails[i].imgMedium +'"/>' + '</p><p>' + responseJson.trails[i].location + '</p><p>' + responseJson.trails[i].summary + '</p><p>' + responseJson.trails[i].length + ' miles</p></li>';
         $('#results-list').append(listItem);
     }
     $('#results').removeClass('hidden');

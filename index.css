@@ -4,6 +4,7 @@
   
   body {
     font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
   }
   
   button, input[type="text"] {
@@ -13,7 +14,13 @@
   button:hover {
     cursor: pointer;
   }
-  
+
+  p {
+    font-family: proxima-nova;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
   ul {
     list-style: none;
     padding: 0;
@@ -22,6 +29,8 @@
   
   li {
     padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
   }
   
   li, img {
@@ -49,26 +58,72 @@
 
   h1 {
     color: white;
+    font-size: 30px;
+    padding-top: 20px;
+    text-shadow: 0px 0px 160px rgba(0,0,0,0.4);
+    font-family: 'Lato', sans-serif;
+  }
+
+  h2 {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
   }
 
   #userAddress {
-    border-radius: 3px;
+    border-radius: 5px;
+    color: #01213b;
+    width: 235px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+  }
+
+  #userAddress::placeholder {
+    color: rgb(160, 156, 156);
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
   }
 
   #js-max-results {
     padding: 5px;
-    margin: 5px;
-    border-radius: 3px;
+    margin: 10px;
+    border-radius: 5px;
+    /* color: rgba(34, 99, 197, 0.658); */
+    color: #01213b;
+    width: 155px;
+    font-weight: 700;
+    background-color: #f2f2f2;
+  }
+
+  #js-max-results::placeholder {
+    color: rgb(160, 156, 156);
+    font-weight: 700;
+    text-align: center;
+    margin: 10px;
   }
 
   #submit {
-    padding: 5px 10px;
-    margin: 5px;
-    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    color: #01213b;
+    font-size: 1em;
+    font-weight: 600;
+    background:#f2f2f2;
+    padding: 5px 16px;
+    text-decoration: none;
+    border: none;
+    min-width: 70px;
+    border: 2px solid #01213b;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
-  /* @media screen and (min-width:768px) {
-    #top-image {
-      height:150px;
-    }
-  } */
+  #submit:hover{
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ad662b;
+    border: 2px solid #ad662b;
+  }
+
+
