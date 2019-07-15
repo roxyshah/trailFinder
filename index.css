@@ -17,8 +17,16 @@
 
   p {
     font-family: proxima-nova;
+    font-style: normal;
+  }
+
+  .summary {
     font-size: 18px;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .linkName {
+    font-size: 20px;
   }
 
   ul {
@@ -68,6 +76,7 @@
     font-size: 35px;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    font-style: normal;
   }
 
   #userAddress {
