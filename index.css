@@ -146,4 +146,19 @@
     color:  #ad662b;
   }
 
+  .trailImgMed {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    
+    .trailImgSmall {
+      display: none;
+    }
+
+    .trailImgMed {
+      display: block;
+    }
+  }
+
 
