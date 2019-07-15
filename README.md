@@ -7,7 +7,7 @@ Screenshot 1: User is prompted to enter a city/state or area code
 Screenshot 2: User entering valid information
 ![](images/trailFinder_img2.PNG)
 Screenshot 3: Search Results are displayed after the User clicks the "Go!" button
-![](trailFinder_searchResults_img3.PNG)
+![](images/trailFinder_searchResults_img3.PNG)
 Screenshot 4: When the user clicks the link (name or image), a new window opens to that link
 ![](images/trailFinder_accessingResults_img4.PNG)
 
