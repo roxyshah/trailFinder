@@ -18,8 +18,5 @@ displayed, the user can select a trail they're interested in. They will be direc
 trail's information in a new window.
 
 Technologies Used:
--HTML
--CSS
--Javascript
--jQuery 
+HTML/CSS/Javascript/jQuery 
 
