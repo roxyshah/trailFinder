@@ -36,7 +36,6 @@
   }
   
   li {
-    /* padding: 10px; */
     margin-right: auto;
     margin-left: auto;
   }
@@ -99,7 +98,6 @@
     padding: 5px;
     margin: 10px;
     border-radius: 5px;
-    /* color: rgba(34, 99, 197, 0.658); */
     color: #01213b;
     width: 155px;
     font-weight: 700;
